@@ -1,0 +1,43 @@
+.pagina2-body{
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: #d1f4f7;
+    justify-content:center;
+    align-items:center;
+    border: 0;
+    position: relative;
+}
+.logo{
+    display: flex;
+    align-items:start;
+    border: 100px;
+    margin-right: 50px;
+}
+.logo img{
+    height: 50px;  
+    margin-right: 10px;
+}  
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+font-weight: 600;
+padding-right: 30px;
+}
+nav a:hover{
+    color: aliceblue;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0;
+    }
+}

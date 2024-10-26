@@ -1,0 +1,108 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 24px repeat(2, 1fr) 150px;
+    width: 100%;
+    height: 600px;
+    grid-template-areas:
+        "perrito2 perrito1 "
+        "perrito3 perrito3 "
+        "perrito4 perrito4 "
+        "perrito6 perrito5 ";
+    /* column-gap: 12px;
+    row-gap: 8px; */
+    gap: 8px 12px;
+    /* justify-items: stretch; */ /*alineacion horizontal*/
+    /* align-items: start; */ /*alineacion vertical*/
+}
+
+#container > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+#container > div {
+    width: auto;
+    height: auto;
+    /* justify-self: stretch; */
+}
+
+#container > div:nth-child(5) {
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+    /* grid-column: 3/4; */
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
+    /* grid-row: 4/5; */
+    grid-area: perrito5;
+}
+
+#container > div:nth-child(1) {
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2; */
+    grid-area: perrito1;
+}
+
+#container > div:nth-child(2) {
+    /* grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2; */
+    grid-area: perrito2;
+}
+
+#container > div:nth-child(3) {
+    /* grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5; */
+    grid-area: perrito3;
+}
+
+#container > div:nth-child(4) {
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    grid-area: perrito4;
+}
+
+#container > div:nth-child(6) {
+    /* grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1; */
+    grid-area: perrito6;
+}
+
+#container2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    justify-content: center; /* Centrar horizontalmente */
+  
+    }
+    #container2>div>img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        
+    }
+    
+    #container2>div{
+        width: 50%;
+        height: auto;
+    }
+    .texto{
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    
